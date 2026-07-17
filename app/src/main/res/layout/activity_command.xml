@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommandActivity">
+
+
+    <TextView
+        android:id="@+id/textConnectionStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:background="#FFAAAA"
+        android:text="Connecting..."
+        app:layout_constraintBottom_toTopOf="@+id/checkA1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="9dp"
+        android:text="Button1"
+        app:layout_constraintBottom_toTopOf="@+id/editinput"
+        app:layout_constraintStart_toStartOf="@+id/editinput" />
+
+    <EditText
+        android:id="@+id/editinput"
+        android:layout_width="214dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="144dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkA1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="10dp"
+        android:text="A1"
+        app:layout_constraintBottom_toTopOf="@+id/editinput"
+        app:layout_constraintEnd_toEndOf="@+id/editinput" />
+
+    <CheckBox
+        android:id="@+id/checkA0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="9dp"
+        android:text="Ao"
+        app:layout_constraintBottom_toTopOf="@+id/editinput"
+        app:layout_constraintStart_toEndOf="@+id/editinput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
